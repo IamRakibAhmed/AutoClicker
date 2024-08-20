@@ -5,7 +5,11 @@ AutoClicker is a simple yet powerful tool that automates mouse clicks at a confi
 ## Features
 
 - **Configurable Clicking Interval:** Set the interval between clicks via a configuration file (`config.yaml`).
-- **Graceful Shutdown:** Supports clean exit using SIGINT (Ctrl+C) or SIGTERM signals, ensuring all resources are released properly.
+- **Keyboard Hotkeys:** Control the auto-clicker with keyboard shortcuts:
+  - `Ctrl + Alt + S`: Stop the auto-clicker
+  - `Ctrl + Alt + R`: Restart the auto-clicker
+  - `Ctrl + Alt + Q`: Exit the program
+- **Graceful Shutdown:** Supports clean exit using keyboard hotkeys, ensuring all resources are released properly.
 - **Custom Click Functionality:** The click function can be customized to extend the tool for different kinds of interactions.
 - **Logging:** Detailed logging with configurable log levels, aiding in debugging and monitoring.
 - **Cross-Platform Compatibility:** Works on Windows, macOS, and Linux, using the cross-platform `pyautogui` library.
@@ -26,6 +30,7 @@ Create a `requirements.txt` file containing the following dependencies:
 ```txt
 pyautogui
 pyyaml
+keyboard
 ```
 
 ## Usage
@@ -46,8 +51,14 @@ pyyaml
      python -m auto_clicker
      ```
 
-3. **Stopping the Application:**
-   - The application can be stopped gracefully by pressing `Ctrl+C` in the terminal or sending a SIGTERM signal.
+3. **Stopping and Restarting:**
+   - Use the following keyboard shortcuts to control the auto-clicker:
+     - **Stop:** `Ctrl + Alt + S`
+     - **Restart:** `Ctrl + Alt + R`
+     - **Exit:** `Ctrl + Alt + Q`
+
+4. **Exiting the Application:**
+   - When you press `Ctrl + Alt + Q`, the application will stop the auto-clicker, clean up resources, and exit.
 
 ## Customization
 
@@ -94,3 +105,4 @@ For any questions or support, please reach out to [Rakib Ahmed](mailto:rakiboffi
 ---
 
 Thank you for using AutoClicker! Happy clicking!
+```
