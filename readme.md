@@ -105,4 +105,3 @@ For any questions or support, please reach out to [Rakib Ahmed](mailto:rakiboffi
 ---
 
 Thank you for using AutoClicker! Happy clicking!
-```
